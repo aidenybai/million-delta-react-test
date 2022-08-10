@@ -2,6 +2,10 @@
 
 ### Test pages:
 
+- [DOM](https://dom-bench.vercel.app/)
+- [Million-React](https://million-bench.vercel.app/)
+- [Million-React w/ Delta](https://delta-bench.vercel.app/)
+
 ### How to benchmark with Chrome:
 
 1. Open Devtools
