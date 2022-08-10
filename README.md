@@ -26,5 +26,5 @@
 
 ### Results:
 
-![](/images/norm.png)
+![](/images/norm.jpeg)
 ![](/images/extra.jpeg)
