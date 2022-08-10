@@ -23,3 +23,8 @@
 ![](/images/time.png)
 
 6. Repeat for all tests.
+
+### Results:
+
+![](/images/norm.png)
+![](/images/extra.jpeg)
