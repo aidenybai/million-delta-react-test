@@ -1,4 +1,4 @@
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { useState } from 'react';
 
 let i = 0;

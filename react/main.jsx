@@ -1,19 +1,28 @@
 import { createRoot } from 'react-dom/client';
-import { useList } from 'react';
+import { flushSync } from 'react-dom';
+import { useState } from 'react';
 
 let i = 0;
 
 const App = () => {
-  const [list, delta] = useList([]);
+  const [list, setList] = useState([]);
 
   return (
     <>
-      <button id="button" onClick={() => list.push(String(++i))}>
+      <button
+        id="button"
+        onClick={() => {
+          // we use flushsync to avoid the 5000 updates to be batched
+          flushSync(() => {
+            setList([...list, String(++i)]);
+          });
+        }}
+      >
         New
       </button>
-      <ul delta={delta}>
+      <ul>
         {list.map((item) => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </>
